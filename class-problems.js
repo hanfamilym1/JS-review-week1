@@ -54,25 +54,5 @@
   */
   
   //Code Here
-  console.log(Math.floor(151/50))
-  class Machine{
-    constructor(){
-    this.widgets_made_count=0;
-    this.wear_and_tear_count=0;
-    this.needs_reboot=false;
-    }
-    makeWidgets(num){
-      this.widgets_made_count+=num;
-      this.wear_and_tear_count+=Math.floor(num/50);
-    }
-    fixMachine(){
-      return this.needs_reboot=true;
-    }
-    reboot(){
-      return ()=>{
-        this.wear_and_tear_count-=10;
-        this.needs_reboot=false;
-      }
-    }
-  }
+  
   
