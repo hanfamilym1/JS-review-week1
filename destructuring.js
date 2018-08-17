@@ -11,7 +11,11 @@ const req = {
 // make the console log below work using destructuring
 
 //code here 
-
+let {greeting, username} = req.body
+let {id} = req.params
+greeting;
+username;
+id;
 console.log(`${greeting} user: ${username} your id# is ${id}`)
 
 
@@ -26,8 +30,15 @@ console.log(`${greeting} user: ${username} your id# is ${id}`)
   The object properties will be named first, second, and third and their values will be numbers.
   Find the smallest number of the three and return that number.
 */
-
-
+function largeNumbers ( {first, second, third} ){
+  if (first < second ) {
+    return first
+  } else if (second < third){
+    return second
+  } else if (third < first){
+    return third
+  }
+}
 
 
 
